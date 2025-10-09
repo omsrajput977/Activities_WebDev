@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    * {
+        
+        margin:10 px;
+    }
+        .screen {
+            display: flex;
+            background-color: aliceblue;
+           
+            height:97vh ;
+            width: 97vw;
+            
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            
+        }
+        .container {
+            height: 750px;
+            width: 750px;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+           }
+        button {
+            background-color: rgb(0, 153, 255);
+            color:azure;
+
+        }
+        button:hover{
+            background-color: rgb(0, 221, 255);
+            color:rgb(255, 255, 255);
+        }
+        .image img {
+            height: 240px;
+            width: 240px;
+            border-radius: 12%;
+        }
+        @media (max-width: 750px){
+            .container {
+                flex-wrap: wrap;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="screen">
+    <div class="container">
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSySSYZ8Vr_66g-cqvEwxmn8qA2KRRTrbcAPA&s"/>
+            <h1>Om Rajput</h1>
+        </div>
+        <div class="info">
+            <h2>Competitive Programmer</h2>
+            <h2>Loves seeing readable code</h2>
+            <h2>and drinking coffee!</h2>
+            <div class="contact">
+                <button> Contact</button>
+                <button> Portfolio</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
